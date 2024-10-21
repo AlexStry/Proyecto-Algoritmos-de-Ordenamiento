@@ -10,6 +10,7 @@ class SistemaNegocios{
     void agregarEmpleado(int, string, int, int);
     void ordenarAntiguedad();
     void mostrarEmpleados() const;
+    void cargarEmpleadosDesdeArchivo(const std::string& nombreArchivo);
 
     private:
     std::list<Empleado> empleados;
