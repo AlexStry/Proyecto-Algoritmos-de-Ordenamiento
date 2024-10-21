@@ -14,6 +14,10 @@ Todos los casos de prueba del proyecto se pueden en contrar dentro del main.cpp 
 - Acceso y visualizacion de los empleados
 
 ### Hace un análisis de complejidad correcto y completo para todo el programa y sus componentes
+**Ordenamiento de Section Sort**
+- Caso Promedio: O(n^2)
+- Peor caso: O(n^2)
+- Mejor caso: O(n)
 **Lista de Empleados**
 - Funcion acceso por valor: Esta funcion triene un nivel de complejidad de O(n) por que para accesar un empleado especifico se ocupa recorrer toda la lista
 - Funcion de Insercion: La funcion de insercion tiene un nivel de complejidad de O(n) tambien ya que los nuevos empleados se meten al inicio de la lista
