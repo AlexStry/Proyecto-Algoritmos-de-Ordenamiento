@@ -60,9 +60,12 @@ Métodos de Estructura de Datos:
 - buscarPorId(): O(n) - Búsqueda lineal
 - buscarPorRangoSalario(): O(n)
 - generarEstadisticas(): O(n)
+
 Métodos de Archivos:
 - cargarEmpleadosDesdeArchivo(): O(n)
 - guardarEmpleadosEnArchivo(): O(n)
+
+
 Complejidad Temporal Global: O(n²)
 - Dominada por el método de ordenamiento
 - Complejidad cuadrática por la función ordenarAntiguedad()
