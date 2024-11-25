@@ -119,4 +119,7 @@ Caracteristicas:
 - Mensaje de confirmación de guardado
 
 ## Compilar y ejecutar
+### Compilar:
+g++ -std=c++11 main.cpp SistemaNegocios.cpp Empleado.cpp -o gestionEmpleados
 
+### Ejecutar:
