@@ -77,6 +77,10 @@ Se eligió una lista enlazada (std::list) por las siguientes razones:
 
 ### Implementa mecanismos para consultar información de las estructras correctos.
 
+### Implementa mecanismos de lectura de archivos para cargar datos a las estructuras de manera correcta.
+
+### Implementa mecanismos de escritura de archivos para guardar los datos de las estructuras de manera correcta
+
 
 ```cpp
 // Caso de prueba 1: Inserción de empleados
