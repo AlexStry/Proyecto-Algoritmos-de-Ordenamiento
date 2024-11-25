@@ -123,3 +123,4 @@ Caracteristicas:
 g++ -std=c++11 main.cpp SistemaNegocios.cpp Empleado.cpp -o gestionEmpleados
 
 ### Ejecutar:
+./gestionEmpleados
