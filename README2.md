@@ -19,11 +19,15 @@ En el avance 2 se mejoro la interaccion con el usuario, agregando un menu y la i
 ## Descripcion del Avance 3
 En el avance 3 se implemento un abase da datos mas grande, mas interaccion con el usuario y varias opciones mas de filtracion de datos, busqueda de empleados y analisis de datos. 
 
-## Desarrollo de Competencias
-
 ## Evalúa los componentes (SICT0301)
 ### Hace un análisis de complejidad correcto y completo para los algoritmos de ordenamiento usados en el programa.
+### Algoritmo de Ordenamiento (Insertion Sort)
+- Mejor caso: O(n) - Lista ya ordenada
+- Caso promedio: O(n²)
+- Peor caso: O(n²) - Lista ordenada inversamente
+- En el peor caso, insertion sort tendria un nivel de complejidad de O(n^2) ya que el algoritmo compara todos los elementos anteriores
 
+### Hace un análisis de complejidad correcto y completo de todas las estructuras de datos y cada uno de sus usos en el programa.
 #### Lista de Empleados O(n)
 
 **Inserción (push_back):**
@@ -44,33 +48,35 @@ En el avance 3 se implemento un abase da datos mas grande, mas interaccion con e
 - Peor caso: O(n)
 - Para borrar un empleado se tiene que recorrer toda la lista a su posicion, entonces es nivel de complejidad de O((n) Ordenamiento de Empleados
 
-### Algoritmo de Ordenamiento (Insertion Sort)
-- Mejor caso: O(n) - Lista ya ordenada
-- Caso promedio: O(n²)
-- Peor caso: O(n²) - Lista ordenada inversamente
-- En el peor caso, insertion sort tendria un nivel de complejidad de O(n^2) ya que el algoritmo compara todos los elementos anteriores
-
 ### Operaciones de Archivo
 
 - Lectura/Escritura: O(n) donde n es el número de empleados
 
-## Justificación de Decisiones (SICT0302)
+### Hace un análisis de complejidad correcto y completo para todos los demás componentes del programa y determina la complejidad final del programa.
 
-### Estructura de Datos Seleccionada
-Se eligió una lista enlazada (std::list) por las siguientes razones:
-- Inserción eficiente (O(1)) para nuevos empleados
-- Buen rendimiento en operaciones secuenciales
-- Manejo eficiente de memoria para datos dinámicos
-- Facilidad de implementación para ordenamiento
 
-### Algoritmo de Ordenamiento
+## Toma de Desiciones (SICT0302)
+
+### Selecciona un algoritmo de ordenamiento adecuado al problema y lo usa correctamente.
+las características de insertion sort lo posicionan como una solución óptima para conjuntos de datos de tamaño pequeño a mediano, especialmente en escenarios empresariales reales donde la cantidad de empleados generalmente no alcanza volúmenes masivos
 Se implementó Insertion Sort por:
 - Eficiencia en conjuntos de datos pequeños (<1000 elementos)
 - Rendimiento óptimo en datos parcialmente ordenados
 - Implementación simple y mantenible
 - Estabilidad en el ordenamiento
 
-## Casos de Prueba (SICT0303)
+### Selecciona una estructura de datos adecuada al problema y la usa correctamente.
+Se eligió una lista enlazada (std::list) por las siguientes razones:
+- Inserción eficiente (O(1)) para nuevos empleados
+- Buen rendimiento en operaciones secuenciales
+- Manejo eficiente de memoria para datos dinámicos
+- Facilidad de implementación para ordenamiento
+- Ideal para escenarios empresariales donde la plantilla de empleados experimenta cambios frecuentes.
+
+## Implementa acciones científicas (SICT0303)
+
+### Implementa mecanismos para consultar información de las estructras correctos.
+
 
 ```cpp
 // Caso de prueba 1: Inserción de empleados
