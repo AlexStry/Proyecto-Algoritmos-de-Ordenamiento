@@ -49,7 +49,6 @@ int main() {
             case 3:
                 sistema.ordenarAntiguedad();
                 cout << "Empleados ordenados por antigüedad:" << endl;
-                sistema.mostrarEmpleados();
                 break;
             case 4: {
                 string nombreArchivo;
