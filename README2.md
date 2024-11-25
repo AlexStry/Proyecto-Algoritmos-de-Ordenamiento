@@ -34,7 +34,7 @@ Prueba 1(Crear y guardar un nuevo empleado):
 8. Ingresar el id del empleado creado.
 9. Apretar 9 para salir.
 
-Prueba 2
+Prueba 2:
 1. Cargar empleados al programa.
 2. Presionar 7 en el menu para filtrar por salario.
 3. Ingresar salario minimo.
