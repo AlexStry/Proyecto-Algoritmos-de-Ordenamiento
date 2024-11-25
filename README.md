@@ -99,8 +99,8 @@ Complejidad Espacial: O(n)
 ## Toma de Desiciones (SICT0302)
 
 ### Selecciona un algoritmo de ordenamiento adecuado al problema y lo usa correctamente.
-las características de insertion sort lo posicionan como una solución óptima para conjuntos de datos de tamaño pequeño a mediano, especialmente en escenarios empresariales reales donde la cantidad de empleados generalmente no alcanza volúmenes masivos
-Se implementó Insertion Sort por:
+Las características de insertion sort lo posicionan como una solución óptima para conjuntos de datos de tamaño pequeño a mediano, especialmente en escenarios empresariales donde la cantidad de empleados generalmente no alcanza volúmenes muy grandes.
+Unas de las caracteristicas son:
 - Eficiencia en conjuntos de datos pequeños (<1000 elementos)
 - Rendimiento óptimo en datos parcialmente ordenados
 - Implementación simple y mantenible
