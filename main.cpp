@@ -1,58 +1,96 @@
 #include "SistemaNegocios.h"
-#include "Empleado.h"
 #include <iostream>
 #include <string>
-
+#include <climits>
 using namespace std;
 
 int main() {
     SistemaNegocios sistema;
     int opcion;
     do {
-        cout << "Menu:\n";
-        cout << "1. Agregar Empleado\n";
-        cout << "2. Mostrar Empleados\n";
-        cout << "3. Ordenar por Antigüedad\n";
-        cout << "4. Cargar Empleados desde Archivo\n";
-        cout << "5. Salir\n";
-        cout << "Ingrese una opción: ";
+        cout << "\nSistema de Gestion de Empleados" << endl;
+        cout << "=============================" << endl;
+        cout << "1. Agregar Empleado" << endl;
+        cout << "2. Mostrar Empleados" << endl;
+        cout << "3. Ordenar por Antiguedad" << endl;
+        cout << "4. Cargar Empleados desde Archivo" << endl;
+        cout << "5. Guardar Empleados en Archivo" << endl;
+        cout << "6. Buscar Empleado por ID" << endl;
+        cout << "7. Buscar por Rango de Salario" << endl;
+        cout << "8. Generar Estadisticas" << endl;
+        cout << "9. Salir" << endl;
+        cout << "Ingrese una opcion: ";
         cin >> opcion;
-
         while(cin.fail()) {
             cin.clear();
             cin.ignore(INT_MAX, '\n');
-            cout << "Entrada inválida. Ingrese un número entre 1 y 5: ";
+            cout << "Entrada invalida. Ingrese un número entre 1 y 9: ";
             cin >> opcion;
         }
-
-        if (opcion == 1) {
-            int id, antiguedad, salario;
-            string nombre;
-            cout << "Ingrese ID (int): ";
-            cin >> id;
-            cout << "Ingrese Nombre (str): ";
-            cin.ignore();
-            getline(cin, nombre);
-            cout << "Ingrese Antigüedad (int): ";
-            cin >> antiguedad;
-            cout << "Ingrese Salario (int): ";
-            cin >> salario;
-            sistema.agregarEmpleado(id, nombre, antiguedad, salario);
-        } else if (opcion == 2){
-            sistema.mostrarEmpleados();
-        } else if (opcion == 3) {
-            sistema.ordenarAntiguedad();
-            sistema.mostrarEmpleados();
-        } else if (opcion == 4){
-            string nombreArchivo;
-            cout << "Ingrese el nombre del archivo: ";
-            cin.ignore();
-            getline(cin, nombreArchivo);
-            sistema.cargarEmpleadosDesdeArchivo(nombreArchivo);
-        } else if (opcion != 5) {
-            cout << "Opción no válida. Por favor, ingrese un número entre 1 y 5.\n";
+        switch(opcion) {
+            case 1: {
+                int id, antiguedad, salario;
+                string nombre;
+                cout << "Ingrese ID: ";
+                cin >> id;
+                cout << "Ingrese Nombre: ";
+                cin.ignore();
+                getline(cin, nombre);
+                cout << "Ingrese Antigüedad (años): ";
+                cin >> antiguedad;
+                cout << "Ingrese Salario: ";
+                cin >> salario;
+                sistema.agregarEmpleado(id, nombre, antiguedad, salario);
+                break;
+            }
+            case 2:
+                sistema.mostrarEmpleados();
+                break;
+            case 3:
+                sistema.ordenarAntiguedad();
+                cout << "Empleados ordenados por antigüedad:" << endl;
+                sistema.mostrarEmpleados();
+                break;
+            case 4: {
+                string nombreArchivo;
+                cout << "Ingrese nombre del archivo: ";
+                cin >> nombreArchivo;
+                sistema.cargarEmpleadosDesdeArchivo(nombreArchivo);
+                break;
+            }
+            case 5: {
+                string nombreArchivo;
+                cout << "Ingrese nombre del archivo para guardar: ";
+                cin >> nombreArchivo;
+                sistema.guardarEmpleadosEnArchivo(nombreArchivo);
+                break;
+            }
+            case 6:{
+                int id;
+                cout << "Ingrese ID del empleado a buscar: ";
+                cin >> id;
+                sistema.buscarPorId(id);
+                break;
+            }
+            case 7: {
+                int min, max;
+                cout << "Ingrese salario minimo: ";
+                cin >> min;
+                cout << "Ingrese salario máximo: ";
+                cin >> max;
+                sistema.buscarPorRangoSalario(min, max);
+                break;
+            }
+            
+            case 8:
+                sistema.generarEstadisticas();
+                break;
+            case 9:
+                cout << "Saliendo del programa..." << endl;
+                break;
+            default:
+                cout << "Opción no válida. Intente nuevamente." << endl;
         }
-    } while (opcion != 5);
-
+    } while(opcion != 9);
     return 0;
 }
