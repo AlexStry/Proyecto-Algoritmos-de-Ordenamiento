@@ -53,7 +53,19 @@ En el avance 3 se implemento un abase da datos mas grande, mas interaccion con e
 - Lectura/Escritura: O(n) donde n es el número de empleados
 
 ### Hace un análisis de complejidad correcto y completo para todos los demás componentes del programa y determina la complejidad final del programa.
-
+Métodos de Estructura de Datos:
+- agregarEmpleado(): O(n) - Verifica duplicados
+- ordenarAntiguedad(): O(n²) - Implementación de inserción
+- mostrarEmpleados(): O(n)
+- buscarPorId(): O(n) - Búsqueda lineal
+- buscarPorRangoSalario(): O(n)
+- generarEstadisticas(): O(n)
+Métodos de Archivos:
+- cargarEmpleadosDesdeArchivo(): O(n)
+- guardarEmpleadosEnArchivo(): O(n)
+Complejidad Temporal Global: O(n²)
+- Dominada por el método de ordenamiento
+- Complejidad cuadrática por la función ordenarAntiguedad()
 
 ## Toma de Desiciones (SICT0302)
 
@@ -76,11 +88,32 @@ Se eligió una lista enlazada (std::list) por las siguientes razones:
 ## Implementa acciones científicas (SICT0303)
 
 ### Implementa mecanismos para consultar información de las estructras correctos.
+Dentro del proyecto se implementaron varios mecanismos de consulta de informacion. Entre las formas de aceder la informacion esta: 
+- Búsqueda por ID
+- Búsqueda por Rango de Salario
+- Generación de Estadísticas
+Caracteristicas: 
+- Iteración directa sobre la lista de empleados
+- Uso de referencias constantes para eficiencia
+- Manejo de casos sin resultados
 
 ### Implementa mecanismos de lectura de archivos para cargar datos a las estructuras de manera correcta.
+En el método cargarEmpleadosDesdeArchivo(), el proyecto implementa la lectura de archivos de la siguiente manera: 
+- Validación de apertura del archivo
+- Limpieza previa del vector de empleados
+- Lectura línea por línea usando std::getline() y std::istringstream
+- Maneja errores si no se pueden leer todos los datos
+- Utiliza método agregarEmpleado() para validar duplicados
+- Cierra el archivo automáticamente
 
 ### Implementa mecanismos de escritura de archivos para guardar los datos de las estructuras de manera correcta
-
+Dentro del proyecto, se implementa el mecanismo de escritura de archivos entre las lineas 72 y 83. 
+Caracteristicas: 
+- Uso de std::ofstream para escritura
+- Validación de apertura del archivo
+- Escritura secuencial de todos los atributos del empleado
+- Manejo de cierre de archivo
+- Mensaje de confirmación de guardado
 
 ```cpp
 // Caso de prueba 1: Inserción de empleados
