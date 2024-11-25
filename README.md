@@ -88,10 +88,13 @@ Métodos de Archivos:
 - cargarEmpleadosDesdeArchivo(): O(n)
 - guardarEmpleadosEnArchivo(): O(n)
 
-
 Complejidad Temporal Global: O(n²)
 - Dominada por el método de ordenamiento
 - Complejidad cuadrática por la función ordenarAntiguedad()
+
+Complejidad Espacial: O(n)
+- Almacenamiento en lista de empleados
+- Memoria proporcional al numero de empleados
 
 ## Toma de Desiciones (SICT0302)
 
