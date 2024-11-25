@@ -118,20 +118,5 @@ Caracteristicas:
 - Manejo de cierre de archivo
 - Mensaje de confirmación de guardado
 
-```cpp
-// Caso de prueba 1: Inserción de empleados
-sistema.agregarEmpleado(1, "Juan", 5, 50000);
-sistema.agregarEmpleado(2, "Ana", 3, 45000);
-sistema.agregarEmpleado(3, "Pedro", 7, 55000);
+## Compilar y ejecutar
 
-// Caso de prueba 2: Ordenamiento
-sistema.ordenarAntiguedad();
-// Resultado esperado: Pedro(7) -> Juan(5) -> Ana(3)
-
-// Caso de prueba 3: Búsqueda por rango salarial
-sistema.buscarPorRangoSalario(45000, 52000);
-// Resultado esperado: Juan, Ana
-
-// Caso de prueba 4: Estadísticas
-sistema.generarEstadisticas();
-// Verifica cálculos de promedios y totales
