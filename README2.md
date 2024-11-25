@@ -19,6 +19,29 @@ En el avance 2 se mejoro la interaccion con el usuario, agregando un menu y la i
 ## Descripcion del Avance 3
 En el avance 3 se implemento un abase da datos mas grande, mas interaccion con el usuario y varias opciones mas de filtracion de datos, busqueda de empleados y analisis de datos. 
 
+## Descripción de las entradas del proyecto
+El proyecto de entrada toma un documento txt. Dentro de los docuemtnos del proyecto adjunte un documento llamado Empleados.txt que contiene 100 objetos de empleados con el formato: ID, Nombre, Antiguedad, Salario.
+
+## Descripción de las salidas del proyecto
+Prueba 1(Crear y guardar un nuevo empleado):
+1. Compilar y ejecutar el programa.
+2. Ingresa el numero 2 al menu para revisar que no hay un empleado cargado.
+3. Presionar 4 y cargar los empleados desde el archivo externo ingresando el nombre del archivo.
+4. Presionar 2 otra vez y revisar que los empleados cargaron.
+5. Presionar 3 para que ordene los empleados por antiguedad y luego presiona 2 para ver los empleados ordenados.
+6. Agregar cualquier empleado con el numero 1 en el menu. Ingresar: ID, Nombre, Intiguedad, Salario.
+7. Presionar 6 en el menu principal para buscar un empleado por id.
+8. Ingresar el id del empleado creado.
+9. Apretar 9 para salir.
+
+Prueba 2
+1. Cargar empleados al programa.
+2. Presionar 7 en el menu para filtrar por salario.
+3. Ingresar salario minimo.
+4. Ingresar salario maximo.
+5. Ingresar 8 en el menu principal y ver estadisticas de los empleados.
+6. Apretar 9 para salir.
+
 ## Evalúa los componentes (SICT0301)
 ### Hace un análisis de complejidad correcto y completo para los algoritmos de ordenamiento usados en el programa.
 ### Algoritmo de Ordenamiento (Insertion Sort)
