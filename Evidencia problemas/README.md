@@ -1,7 +1,7 @@
 # Evidencia Problemas
 
 ## Problema Algortimo de Ordenamiento
-link al video:
+link al video: https://drive.google.com/file/d/1o_I8258l-CI6127K0wbb3Ewb6I3CKI2f/view?usp=sharing
 link entrega: https://leetcode.com/problems/k-closest-points-to-origin/submissions/1465366661/?source=submission-ac
 
 ## Problema Estructura Lineal
