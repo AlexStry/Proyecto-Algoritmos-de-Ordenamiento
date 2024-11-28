@@ -9,5 +9,5 @@
 - link entrega: https://leetcode.com/problems/valid-parentheses/submissions/1465366564/
 
 ## Problema estructura no lineal
-- link video:
+- link video: https://drive.google.com/file/d/1xUFx9mMCo_HGZY7y8fEd-sqUgNe1XtNg/view?usp=sharing
 - link entrega: https://leetcode.com/problems/symmetric-tree/submissions/1465368917/
