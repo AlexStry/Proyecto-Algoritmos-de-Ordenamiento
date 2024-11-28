@@ -10,4 +10,4 @@
 
 ## Problema estructura no lineal
 - link video:
-- link entrega: 
+- link entrega: https://leetcode.com/problems/symmetric-tree/submissions/1465368917/
